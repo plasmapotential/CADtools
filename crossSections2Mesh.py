@@ -25,6 +25,29 @@ grid_size = 200
 rootPath = '/root/source/CADtools/'
 STPfile = rootPath + 'vacVes.step'
 
+
+#outputs
+#a 2D CAD file with edges
+STPout2D = rootPath + 'vacVesout2D.step'
+#a file with the pTable.csv
+pTableOut = rootPath + 'pTable.csv'
+
+
+#HEAT path
+HEATpath = '/root/source/HEAT'
+
+
+#============== user inputs ===================
+rMax = 5000
+zMax = 3000
+phi = 90.0 #degrees
+grid_size = 200
+
+#USE LINES BELOW FOR DEVELOPMENT IN TOM'S ENVIRONMENT
+#path where CAD .step file lives
+rootPath = '/home/tom/work/CFS/projects/reducedCAD/vacVes/'
+STPfile = rootPath + 'vacVes.step'
+
 #outputs
 #a 2D CAD file with edges
 STPout2D = rootPath + 'vacVesout2D.step'
@@ -32,7 +55,21 @@ STPout2D = rootPath + 'vacVesout2D.step'
 pTableOut = rootPath + 'pTable.csv'
 
 #HEAT path
-HEATpath = '/root/source/HEAT'
+HEATpath = '/home/tom/source/HEAT/github/source'
+
+#USE THE LINES BELOW FOR INSIDE DOCKER CONTAINER
+##path where CAD .step file lives
+#rootPath = '/root/source/CADtools/'
+#STPfile = rootPath + 'vacVes.step'
+#
+##outputs
+##a 2D CAD file with edges
+#STPout2D = rootPath + 'vacVesout2D.step'
+##a file with the pTable.csv
+#pTableOut = rootPath + 'pTable.csv'
+#
+##HEAT path
+#HEATpath = '/root/source/HEAT'
 #=============================================
 
 #load HEAT into the path envVar
