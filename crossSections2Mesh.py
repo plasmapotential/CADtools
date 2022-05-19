@@ -18,12 +18,12 @@ import argparse
 #============== user inputs ===================
 rMax = 5000
 zMax = 3000
-phi = 90.0 #degrees
+phi = 0.0 #degrees
 grid_size = 200
 
 #path where CAD .step file lives
-rootPath = '/root/source/CADtools/'
-STPfile = rootPath + 'vacVes.step'
+rootPath = '/root/files/'
+STPfile = rootPath + 'VV_torComps.stp'
 
 
 #outputs
@@ -43,23 +43,9 @@ zMax = 3000
 phi = 90.0 #degrees
 grid_size = 200
 
-#USE LINES BELOW FOR DEVELOPMENT IN TOM'S ENVIRONMENT
-#path where CAD .step file lives
-rootPath = '/home/tom/work/CFS/projects/reducedCAD/vacVes/'
-STPfile = rootPath + 'vacVes.step'
-
-#outputs
-#a 2D CAD file with edges
-STPout2D = rootPath + 'vacVesout2D.step'
-#a file with the pTable.csv
-pTableOut = rootPath + 'pTable.csv'
-
-#HEAT path
-HEATpath = '/home/tom/source/HEAT/github/source'
-
-#USE THE LINES BELOW FOR INSIDE DOCKER CONTAINER
+##USE LINES BELOW FOR DEVELOPMENT IN TOM'S ENVIRONMENT
 ##path where CAD .step file lives
-#rootPath = '/root/source/CADtools/'
+#rootPath = '/home/tom/work/CFS/projects/reducedCAD/vacVes/'
 #STPfile = rootPath + 'vacVes.step'
 #
 ##outputs
@@ -69,7 +55,8 @@ HEATpath = '/home/tom/source/HEAT/github/source'
 #pTableOut = rootPath + 'pTable.csv'
 #
 ##HEAT path
-#HEATpath = '/root/source/HEAT'
+#HEATpath = '/home/tom/source/HEAT/github/source'
+
 #=============================================
 
 #load HEAT into the path envVar
