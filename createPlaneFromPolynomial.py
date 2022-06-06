@@ -54,6 +54,7 @@ for idx,c in enumerate(coeffs):
     p = np.polynomial.Polynomial(c)
     r = p(zLin)
 
+    #xyz coordinates at phi=0.  convert to mm
     x = r*1e3
     y = np.zeros((len(r)))*1e3
     z = zLin * 1e3
